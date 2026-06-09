@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SkladOfProduction
 {
-    public partial class Form1 : Form
+    public partial class Sklad : Form
     {
-        public Form1()
+        public Sklad()
         {
             InitializeComponent();
         }
