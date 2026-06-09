@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDate.Designer.cs">
+      <DependentUpon>FormDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Sklad.cs">
       <SubType>Form</SubType>
@@ -55,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDate.resx">
+      <DependentUpon>FormDate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sklad.resx">
       <DependentUpon>Sklad.cs</DependentUpon>
     </EmbeddedResource>
