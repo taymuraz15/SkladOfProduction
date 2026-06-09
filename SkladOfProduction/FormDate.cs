@@ -12,9 +12,24 @@ namespace SkladOfProduction
 {
     public partial class FormDate : Form
     {
+        public DateTime VybrannayaData { get; private set; }
+        public bool IsConfirmed = false;
         public FormDate()
         {
             InitializeComponent();
+            datetimeAddProdutcToSklad.Value = DateTime.Today;
+        }
+
+        private void FormDate_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            VybrannayaData = datetimeAddProdutcToSklad.Value;
+            IsConfirmed = true; 
+            this.Close();
         }
     }
 }
