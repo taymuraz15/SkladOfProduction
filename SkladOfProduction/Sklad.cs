@@ -32,7 +32,7 @@ namespace SkladOfProduction
 
             foreach (Product p in catalog)
             {
-                listBoxCatalog.Items.Add(p.Name + " (Срок: " + p.OstatokDney + " дн.)");
+                listBoxCatalog.Items.Add(p.Name + " годен ещё " + p.OstatokDney + " дней");
             }
         }
 
@@ -80,7 +80,7 @@ namespace SkladOfProduction
                 listBoxSklad.Items.Add(p.Name + " — Поступил: " + p.DataPostupleniya.ToShortDateString());
             }
 
-            MessageBox.Show("Проверка завершена! На складе оставлены только товары для уценки.", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Готово");
         }
     }
 }
